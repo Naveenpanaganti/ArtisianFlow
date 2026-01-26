@@ -34,3 +34,17 @@ ArtisanFlow is a mobile-first solution designed to help local artisans in Tier-2
 
 ## Reflection
 By using a modular folder structure, I can separate business logic from UI, making the app easier to scale. Learning about StatefulWidget was essential for handling the button interaction in this sprint.
+# Flutter Environment Setup and First App Run
+
+### Steps Followed:
+1. **SDK Installation**: Installed Flutter SDK on `F:\flutter` and added the `bin` folder to the System PATH.
+2. **Environment Configuration**: Set `ANDROID_HOME` to `F:\Android\Sdk` and fixed the VS Code Dart SDK path.
+3. **Emulator Setup**: Created a Pixel 7 Virtual Device using Android Studio's AVD Manager.
+4. **Firebase Integration**: Successfully linked the project using `flutterfire configure`.
+
+### Setup Verification:
+* **Flutter Doctor Output**: (Insert your screenshot here)
+* **Running App**: (Insert screenshot of the app on your Pixel 7 emulator)
+
+### Reflection:
+The main challenge was managing storage constraints on the C: drive and redirecting all SDK components to the F: drive. This setup is crucial because it ensures that the app has a stable environment to communicate with Firebase for real-time data persistence.
