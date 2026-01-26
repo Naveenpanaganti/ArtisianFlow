@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'screens/welcome_screen.dart'; // Import your new screen
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'screens/responsive_home.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // This connects your app to the project you just configured in the terminal
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  
   runApp(const MyApp());
 }
 
@@ -12,9 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ArtisanFlow',
       theme: ThemeData(primarySwatch: Colors.brown, useMaterial3: true),
-      home: const WelcomeScreen(), // Set the WelcomeScreen as home
+      home: const ResponsiveHome(), 
     );
   }
 }

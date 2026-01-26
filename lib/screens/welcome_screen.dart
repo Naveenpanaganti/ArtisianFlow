@@ -33,7 +33,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: buttonColor),
               onPressed: _handlePress,
-              child: const Text("Get Started", style: TextStyle(color: Colors.white)),
+              child: const Text("Get Started Now", style: TextStyle(color: Colors.white)),
             ),
           ],
         ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050739506682",
+    "project_id": "artisianflow",
+    "storage_bucket": "artisianflow.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050739506682:android:0b110c95a7067d28f2b843",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfeY4Ed4NqpnAEPBngvqiaBOi62bnXE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
