@@ -32,7 +32,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: buttonColor),
-              onPressed: _handlePress,
+              onPressed: () {
+                debugPrint('Get Started button clicked! Navigating to product entry...');
+              },
               child: const Text("Get Started Now", style: TextStyle(color: Colors.white)),
             ),
           ],

@@ -43,8 +43,44 @@ By using a modular folder structure, I can separate business logic from UI, maki
 4. **Firebase Integration**: Successfully linked the project using `flutterfire configure`.
 
 ### Setup Verification:
-* **Flutter Doctor Output**: (Insert your screenshot here)
-* **Running App**: (Insert screenshot of the app on your Pixel 7 emulator)
+* **Flutter Doctor Output**:![alt text](image.png)
+* **Running App**: ![alt text](image-1.png)
 
 ### Reflection:
 The main challenge was managing storage constraints on the C: drive and redirecting all SDK components to the F: drive. This setup is crucial because it ensures that the app has a stable environment to communicate with Firebase for real-time data persistence.
+
+## Folder Structure Exploration
+I have documented the full architecture of the ArtisanFlow project. 
+- See the full breakdown here: [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)
+- **Key Insight**: Understanding the `android/app/build.gradle` was vital for our Firebase MultiDex setup earlier in the sprint.
+
+
+# Widget tree Hierarcy 
+The Widget Tree Hierarchy:
+
+MaterialApp (Root)
+
+Scaffold (Layout Structure)
+
+AppBar (Top Navigation)
+
+Center (Alignment)
+
+Column (Vertical Layout)
+
+Text (Displays count)
+
+SizedBox (Spacing)
+
+Container (Reactive color box)
+
+ElevatedButton (The trigger)
+
+
+## stateless and stateful widget:
+
+Stateless Widget: These are "immutable." Their properties cannot change once they are drawn. They are lightweight and great for performance when the UI is static.
+
+Stateful Widget: These have a companion State object. When setState() is called, Flutter "re-builds" this specific part of the tree to show new data.
+
+Performance Tip: We separate them so that when the favorite icon (Stateful) changes color, the Header (Stateless) doesn't have to waste energy rebuilding itself.fli

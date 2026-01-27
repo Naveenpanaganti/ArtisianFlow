@@ -11,7 +11,7 @@ class ResponsiveHome extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("ArtisanFlow Dashboard"),
+        title: const Text("Artisan shop"),
         backgroundColor: Colors.brown[400],
       ),
       body: LayoutBuilder(
