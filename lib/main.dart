@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/detail_screen.dart';
+import 'screens/responsive_layout.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/', // Starts the app at the Dashboard
       routes: {
-        '/': (context) => const HomeScreen(),
-        '/detail': (context) => const DetailScreen(),
-      },
+  '/': (context) => const HomeScreen(),
+  '/detail': (context) => const DetailScreen(),
+  '/responsive': (context) => const ResponsiveLayout(),
+},
     );
   }
 }
