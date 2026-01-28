@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/welcome_screen.dart'; // Import your new screen
+import 'screens/home_screen.dart';
+import 'screens/detail_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,9 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ArtisanFlow',
-      theme: ThemeData(primarySwatch: Colors.brown, useMaterial3: true),
-      home: const WelcomeScreen(), // Set the WelcomeScreen as home
+      initialRoute: '/', // Starts the app at the Dashboard
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/detail': (context) => const DetailScreen(),
+      },
     );
   }
 }
