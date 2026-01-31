@@ -97,3 +97,9 @@ DevTools Reflection: The Widget Inspector is essential for diagnosing layout iss
 Navigator Stack: The Navigator works like a stack of cards; pushNamed adds a card to the top, and pop removes it to reveal the one underneath.
 
 Named Routes Benefits: Using named routes (like '/detail') makes the code more readable and centralizes navigation logic in main.dart, which is essential for scaling large apps.
+
+
+## Scrollable views
+Efficiency: Using .builder() is critical for the "ArtisanFlow" catalog because it only creates the widgets that are currently visible on the screen, saving memory.
+
+Performance Pitfalls: Avoid nesting scrollable views (like a ListView inside another ListView) without using shrinkWrap or defined heights, as this can lead to layout crashes.
